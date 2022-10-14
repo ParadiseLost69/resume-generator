@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
-
+.App {
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+}
 .App-header {
   background-color: #282c34;
   display: flex;
@@ -18,4 +21,14 @@
   font-family: "Roboto";
   font-size: 1rem;
   padding: 5px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 43.75em) {
+  h1 {
+    font-size: 2.5rem;
+  }
 }

@@ -1,0 +1,9 @@
+.preview-page {
+  background-color: rgb(255, 248, 219);
+  display: flex;
+  padding: 1em;
+  max-width: 1000px;
+  min-width: 320px;
+  justify-self: center;
+  justify-content: center;
+}

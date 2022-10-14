@@ -12,7 +12,7 @@ function App() {
     address: "250 North Centre Road, London, ON",
     phone: "613-532-9421",
     email: "tedloukas@outlook.com",
-    Description:
+    description:
       "I am a professional full-stack web developer from Kingston, Ontario, Canada.",
   });
 
