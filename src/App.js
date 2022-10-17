@@ -1,6 +1,6 @@
 import "./App.css";
 import Form from "./components/Form";
-import Preview from "./components/Preview";
+import Preview from "./components/Preview.jsx";
 import React, { useState } from "react";
 
 function App() {
