@@ -1,5 +1,7 @@
 import React from "react";
 import "./Preview.css";
+import { FaAddressBook } from "react-icons/fa";
+import { AiFillPhone, AiOutlineMail } from "react-icons/ai";
 
 const Preview = (props) => (
   <div className="preview-page">
@@ -16,9 +18,18 @@ const Preview = (props) => (
         <h2 className="job-title-preview">{props.personalFormData.jobTitle}</h2>
       </div>
       <div className="contact-info-container">
-        <h3 className="contact-info">{props.personalFormData.phone}</h3>
-        <h3 className="contact-info">{props.personalFormData.email}</h3>
-        <h3 className="contact-info">{props.personalFormData.address}</h3>
+        <div className="contact-info-wrapper">
+          <AiFillPhone />
+          <h3 className="contact-info">{props.personalFormData.phone}</h3>
+        </div>
+        <div className="contact-info-wrapper">
+          <AiOutlineMail />
+          <h3 className="contact-info">{props.personalFormData.email}</h3>
+        </div>
+        <div className="contact-info-wrapper">
+          <FaAddressBook />
+          <h3 className="contact-info">{props.personalFormData.address}</h3>
+        </div>
       </div>
     </div>
   </div>

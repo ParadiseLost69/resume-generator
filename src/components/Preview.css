@@ -2,8 +2,29 @@
   background-color: rgb(255, 248, 219);
   display: flex;
   padding: 1em;
-  max-width: 1000px;
   min-width: 320px;
+  width: 80%;
   justify-self: center;
   justify-content: center;
+  margin: 3rem;
+}
+
+.contact-info-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info-wrapper > svg,
+.contact-info-wrapper > h3 {
+  margin: 2px;
+}
+.contact-info-wrapper > svg {
+  margin-right: 1rem;
+}
+.personal-information-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
