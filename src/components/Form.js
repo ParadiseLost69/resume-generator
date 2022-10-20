@@ -1,18 +1,19 @@
 import React from "react";
-import Personal from "./form-components/Personal";
-import Work from "./form-components/Work";
+import Personal from "./form-components/Personal.jsx";
+import Work from "./form-components/Work.jsx";
 import Education from "./form-components/Education";
+import "./Form.css";
 
 const Form = (props) => (
-  <div className="form-page">
+  <main className="form-page">
     <Personal
       formData={props.personalFormData}
       setFormData={props.setPersonalFormData}
     />
 
-    <Work />
+    <Work formData={props.workFormData} setFormData={props.setWorkFormData} />
     <Education />
-  </div>
+  </main>
 );
 
 export default Form;

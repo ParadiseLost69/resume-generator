@@ -1,7 +1,5 @@
-.personal-information-container {
-  border: 2px solid black;
-  margin: 2em;
-  padding: 2em;
+.input-container > label {
+  font-weight: bolder;
 }
 
 .input-container {
@@ -11,8 +9,6 @@
 }
 
 .personal-input {
-  border-radius: 2px;
-  border: 1px solid black;
   padding: 2px;
   text-indent: 2px;
   margin: 5px;

@@ -10,9 +10,9 @@ const Personal = ({ formData, setFormData }) => {
   }
 
   return (
-    <div className="personal-information-container">
-      <h1 className="personal-information-header">Personal Information</h1>
-      <form className="personal-information input-container">
+    <div className="card">
+      <h1 className="personal-information-form-header">Personal Information</h1>
+      <form className="personal-information input-container form">
         <label htmlFor="firstName">
           First Name
           <input
@@ -76,8 +76,8 @@ const Personal = ({ formData, setFormData }) => {
             value={formData.phone}
           />
         </label>
-        <label htmlFor="description">
-          Description
+        <div className="desc box">
+          <label htmlFor="description">Description</label>
           <textarea
             onChange={handleChange}
             className="personal-input"
@@ -85,7 +85,7 @@ const Personal = ({ formData, setFormData }) => {
             placeholder="I am teddy and I am a web developer from..."
             value={formData.description}
           />
-        </label>
+        </div>
       </form>
     </div>
   );

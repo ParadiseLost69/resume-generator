@@ -1,19 +1,70 @@
-.preview-page {
-  background-color: rgb(255, 248, 219);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display:wght@700&display=swap");
+.page {
   display: flex;
-  padding: 1em;
-  min-width: 320px;
-  width: 80%;
-  justify-self: center;
   justify-content: center;
+}
+.preview-page {
+  /* background-color: #e8e5e5; */
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: center;
+  margin-inline: 0;
   margin: 3rem;
+  max-width: 63.75rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 2rem 0.5rem grey;
+}
+.preview-page * h1,
+.preview-page * h2,
+.preview-page * h3,
+.preview-page * h4,
+.preview-page * h5,
+.preview-page * svg {
+  color: #535353;
 }
 
+.content {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.personal-information-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 59rem;
+
+  border-bottom: 2px solid black;
+  width: 80vw;
+}
+
+.personal-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* CONTACT INFO SECTION */
+.contact-info-h3 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 20rem;
+}
+
+.contact-info-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+}
 .contact-info-wrapper {
   display: flex;
-  align-items: center;
 }
-
+.contact-info-wrapper > h3 {
+}
 .contact-info-wrapper > svg,
 .contact-info-wrapper > h3 {
   margin: 2px;
@@ -21,10 +72,43 @@
 .contact-info-wrapper > svg {
   margin-right: 1rem;
 }
-.personal-information-header {
+
+/* NAME SECTION */
+.name-title-container {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  flex-direction: column;
+}
+
+.first-name-preview,
+.last-name-preview {
+  margin-bottom: 0;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  font-size: 3rem;
+}
+.job-title-preview {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* DESCRIPTION */
+
+.description-preview {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+.description-preview > p {
+  text-indent: 1rem;
+}
+.sub-header {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  font-weight: bolder;
 }

@@ -1,0 +1,40 @@
+.card {
+  border: 1px solid black;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  margin: 2em;
+  padding: 2em;
+}
+.form {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  font-weight: bolder;
+}
+
+.box > textarea {
+  height: 3rem;
+  width: auto;
+  resize: none;
+}
+.box input,
+.box label {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 43.75em) {
+  .form {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .desc {
+    grid-column: 1/3;
+  }
+}
