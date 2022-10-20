@@ -5,7 +5,7 @@ import { AiFillPhone, AiOutlineMail } from "react-icons/ai";
 
 const Preview = (props) => (
   <main className="page">
-    <main className="preview-page">
+    <div className="preview-page">
       <div className="personal-information-header content">
         <div className="name-title-container personal-container">
           <div className="full-name-container">
@@ -41,7 +41,45 @@ const Preview = (props) => (
         <h2 className="sub-header about">About Me</h2>
         <p>{props.personalFormData.description}</p>
       </div>
-    </main>
+      <div className="area content">
+        <section className="work section">
+          <h1>Work Experience</h1>
+          <div className="sector">
+            <h2 className="company-preview"> {props.workFormData.company}</h2>
+            <h3>
+              {props.workFormData.startDate} - {props.workFormData.endDate}
+            </h3>
+            <ul>
+              <li>{props.workFormData.dutyOne}</li>
+              <li>{props.workFormData.dutyTwo}</li>
+              <li>{props.workFormData.dutyThree}</li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="education section">
+          <h2>Education</h2>
+
+          <div className="sector">
+            <h3>{props.educationFormData.school}</h3>
+            <h4>{props.educationFormData.program}</h4>
+            <h3>
+              {props.educationFormData.startDate} -{" "}
+              {props.educationFormData.endDate}
+            </h3>
+          </div>
+        </section>
+        <section className="skills section">
+          <h2>Skills</h2>
+
+          <div className="sector">
+            <h3>{props.skillsFormData.skillOne}</h3>
+            <h3>{props.skillsFormData.skillTwo}</h3>
+            <h3>{props.skillsFormData.skillThree}</h3>
+          </div>
+        </section>
+      </div>
+    </div>
   </main>
 );
 

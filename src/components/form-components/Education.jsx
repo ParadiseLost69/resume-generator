@@ -1,6 +1,5 @@
 import React from "react";
-
-const Work = ({ formData, setFormData }) => {
+const Education = ({ formData, setFormData }) => {
   function handleChange(e) {
     const { value, name } = e.target;
     setFormData((prevData) => {
@@ -8,15 +7,15 @@ const Work = ({ formData, setFormData }) => {
     });
   }
   return (
-    <section className="work-page card">
-      <h1>Work Experience</h1>
+    <section className="education-page card">
+      <h1>Education</h1>
       <form action="/" className="form">
         <div className="box">
-          <label htmlFor="company">Company</label>
+          <label htmlFor="school">School</label>
           <input
             type="text"
-            value={formData.company}
-            name="company"
+            name="school"
+            value={formData.school}
             onChange={handleChange}
           />
         </div>
@@ -25,8 +24,8 @@ const Work = ({ formData, setFormData }) => {
           <label htmlFor="startDate">Start Date</label>
           <input
             type="text"
-            value={formData.startDate}
             name="startDate"
+            value={formData.startDate}
             onChange={handleChange}
           />
         </div>
@@ -35,30 +34,18 @@ const Work = ({ formData, setFormData }) => {
           <label htmlFor="endDate">End Date</label>
           <input
             type="text"
-            value={formData.endDate}
             name="endDate"
+            value={formData.endDate}
             onChange={handleChange}
           />
         </div>
 
         <div className="box">
-          <label htmlFor="duties">Duties</label>
+          <label htmlFor="degree">Degree</label>
           <input
             type="text"
-            value={formData.dutyOne}
-            name="dutyOne"
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            value={formData.dutyTwo}
-            name="dutyTwo"
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            value={formData.dutyThree}
-            name="dutyThree"
+            name="program"
+            value={formData.program}
             onChange={handleChange}
           />
         </div>
@@ -66,4 +53,5 @@ const Work = ({ formData, setFormData }) => {
     </section>
   );
 };
-export default Work;
+
+export default Education;

@@ -6,32 +6,38 @@ import React, { useState } from "react";
 function App() {
   const [isPreview, setIsPreview] = useState(false);
   const [personalFormData, setPersonalFormData] = useState({
-    firstName: "Teddy",
-    lastName: "Loukas",
-    jobTitle: "Developer",
-    address: "250 North Centre Road, London, ON",
-    phone: "613-532-9421",
-    email: "tedloukas@outlook.com",
-    description:
-      "I am a professional full-stack web developer from Kingston, Ontario, Canada. I have been doing alot of programming and web dev. It has been almost a year since I have started and I am learning quickly.",
+    firstName: "",
+    lastName: "",
+    jobTitle: "",
+    address: "",
+    phone: "",
+    email: "",
+    description: "",
   });
 
-  const [workFormData, setWorkFormData] = useState([
-    {
-      id: "0",
-      company: "Future Shop",
-      startDate: "July 12 1995",
-      endDate: "June 4 1996",
-      duties: "Do this this and that",
-    },
-  ]);
+  const [workFormData, setWorkFormData] = useState({
+    id: "0",
+    company: "",
+    startDate: "",
+    endDate: "",
+    dutyOne: "",
+    dutyTwo: "",
+    dutyThree: "",
+  });
 
-  const [educationFormData, setEducationFormData] = useState([
-    {
-      id: "0",
-      school: "St. Francis Xavier University",
-    },
-  ]);
+  const [educationFormData, setEducationFormData] = useState({
+    id: "0",
+    school: "",
+    program: "",
+    startDate: "",
+    endDate: "",
+  });
+
+  const [skillsFormData, setSkillsFormData] = useState({
+    skillOne: "",
+    skillTwo: "",
+    skillThree: "",
+  });
 
   function handleSubmit() {
     setIsPreview((prev) => !prev);
@@ -50,6 +56,7 @@ function App() {
           personalFormData={personalFormData}
           workFormData={workFormData}
           educationFormData={educationFormData}
+          skillsFormData={skillsFormData}
         />
       ) : (
         <Form
@@ -59,6 +66,8 @@ function App() {
           setWorkFormData={setWorkFormData}
           educationFormData={educationFormData}
           setEducationFormData={setEducationFormData}
+          skillsFormData={skillsFormData}
+          setSkillsFormData={setSkillsFormData}
         />
       )}
     </div>

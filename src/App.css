@@ -10,6 +10,8 @@
   font-size: calc(10px + 2vmin);
   color: white;
   height: 10vh;
+  position: sticky;
+  top: 0;
 }
 .App-switch-button {
   background-color: white;
@@ -39,6 +41,10 @@ input {
 }
 input:focus {
   border: 0.1rem solid rgb(40, 44, 52);
+}
+
+li {
+  margin: 1rem;
 }
 
 @media screen and (min-width: 43.75em) {
